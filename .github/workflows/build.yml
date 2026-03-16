@@ -931,8 +931,9 @@ jobs:
           fi
 
           # 配置内核名称
-          if [ -n "${{ inputs.version }}" ]; then
-            CLEAN_VERSION=$(echo "${{ inputs.version }}" | sed -E 's/^[0-9]+\.[0-9]+\.[0-9]+//')
+          VERSION_INPUT=$(echo "${{ inputs.version }}" | tr -d '[:space:]')
+          if [ -n "$VERSION_INPUT" ]; then
+            CLEAN_VERSION=$(echo "$VERSION_INPUT" | sed -E 's/^[0-9]+\.[0-9]+\.[0-9]+//')
             # 6.6+：新格式 setlocalversion，保留 ${KERNELVERSION}
             perl -i -0777 -pe 's/(.*)echo "\$\{KERNELVERSION\}\$\{file_localversion\}\$\{config_localversion\}\$\{LOCALVERSION\}\$\{scm_version\}"/$1echo "\$\{KERNELVERSION\}'"${CLEAN_VERSION}"'"/s' ./common/scripts/setlocalversion 2>/dev/null || true
             # 旧格式（5.x/6.1）回退
