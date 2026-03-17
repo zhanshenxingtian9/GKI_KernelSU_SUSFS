@@ -58,8 +58,8 @@ Wiki covers:
 
 When the following two branches update at different paces, builds may fail:
 
-- SukiSU builtin branch: <https://github.com/SukiSU-Ultra/SukiSU-Ultra/tree/builtin>
-- SUSFS gki-android14-6.1 branch: <https://gitlab.com/simonpunk/susfs4ksu/-/tree/gki-android14-6.1?ref_type=heads>
+- [SukiSU builtin branch](https://github.com/SukiSU-Ultra/SukiSU-Ultra/tree/builtin)
+- [SUSFS gki-android14-6.1 branch](https://gitlab.com/simonpunk/susfs4ksu/-/tree/gki-android14-6.1?ref_type=heads)
 
 For example: SUSFS just pushed a new commit, but SukiSU's `builtin` branch hasn't caught up yet — patching/compiling will likely fail.
 
@@ -82,8 +82,8 @@ A commit is a hash string representing the state of a repository at a specific p
 
 **How to get a commit hash?**
 
-- SUSFS: https://gitlab.com/simonpunk/susfs4ksu
-- SukiSU: https://github.com/SukiSU-Ultra/SukiSU-Ultra/commits/builtin/
+- SUSFS: [susfs4ksu](https://gitlab.com/simonpunk/susfs4ksu)
+- SukiSU: [SukiSU-Ultra commits/builtin](https://github.com/SukiSU-Ultra/SukiSU-Ultra/commits/builtin/)
 
 Taking SUSFS as an example, first select the branch, then copy the commit hash:
 
