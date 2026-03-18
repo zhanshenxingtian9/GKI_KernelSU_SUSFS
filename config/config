@@ -13,11 +13,11 @@
 #================================================================
 
 #是否启用自定义提交(真/假)
-custom=true
+custom=false
 
 #==================== SUSFS各分支的提交哈希====================
 #仅当custom=true时生效
-gki-android12-5.10=454390ae737c37e9aadd7aefb41b8e5225b82a64
+gki-android12-5.10=454390ae737c37e9aadd
 gki-android13-5.15=
 gki-android14-6.1=
 gki-android15-6.6=
